@@ -5,6 +5,7 @@
 }
 body {
   font-family: "Merriweather", serif;
+  font-size: 13px;
 }
 
 .container {
@@ -31,7 +32,7 @@ body {
   position: absolute;
   top: 0px;
   left: -100px;
-  width: 443px;
+  width: 158%;
   height: 20vh;
   background-color: rgba(26, 23, 28, 0.4);
 }
@@ -48,4 +49,16 @@ div[class="bg-heading"] {
   top: -30px;
   left: 40%;
   color: white;
+}
+.main {
+  background-color: whitesmoke;
+}
+.head1 {
+  margin: 82px 71px 54px 59px;
+  width: 80%;
+  width: 49%;
+}
+.action {
+  margin-top: 6%;
+  margin-bottom: -23px;
 }
