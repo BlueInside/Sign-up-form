@@ -132,3 +132,6 @@ input:not(:placeholder-shown):not(:focus):valid {
   border-color: green;
   transition: border 0.5ms ease;
 }
+.error {
+  border-color: red;
+}
