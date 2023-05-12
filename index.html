@@ -12,49 +12,99 @@
   </head>
   <body>
     <div class="container">
-      <div class="bg-logo">
+      <div class="bg-image">
         <img class="bg-img" src="img/bgImg.avif" alt="background image" />
-        <img class="logo-img" src="img/logo.png" alt="logo image" />
+        <div class="bg-logo">
+          <img class="logo-img" src="img/logo.png" alt="logo image" />
+          <div class="bg-heading">ODIN</div>
+          <div class="shadow"></div>
+        </div>
+        <div class="img-footer">Credits</div>
       </div>
       <div class="main">
         <header>
-          <h1>
-            This is not a real online service! blah blah blah blah blah blah
-            blah blah blah blah blah blah blah blah blah... Sign up now to get
-            started. You know you want to.
-          </h1>
+          <div class="head1">
+            <h1>
+              This is not a real online service! blah blah blah blah blah blah
+              blah blah blah blah blah blah blah blah blah... Sign up now to get
+              started.
+              <p class="action"><i>You</i> know you want to.</p>
+            </h1>
+          </div>
         </header>
-        <form action="#" method="post">
-          <fieldset>
-            <legend>Let's do this!</legend>
-            <p>
-              <label for="first_name">FIRST NAME</label>
-              <input type="text" id="first_name" name="firstName" />
-            </p>
-            <p>
-              <label for="last_name">LAST NAME</label>
-              <input type="text" id="last_name" name="lastName" />
-            </p>
-            <p>
-              <label for="email">EMAIL</label>
-              <input type="email" id="email" name="email" />
-            </p>
-            <p>
-              <label for="tel">PHONE NUMBER</label>
-              <input type="tel" id="tel" name="tel" />
-            </p>
-            <p>
-              <label for="psw">Password</label>
-              <input type="password" id="psw" name="password" />
-            </p>
-            <p>
-              <label for="cPsw">CONFIRM PASSWORD</label>
-              <input type="password" id="cPsw" name="confirmPassword" />
-            </p>
-          </fieldset>
-          <button type="button">Create Account</button>
-        </form>
-        <p>Already have an account? <a href="">Log in</a></p>
+        <div class="form-wrapper">
+          <form action="#" method="post">
+            <fieldset>
+              <legend>Let's do this!</legend>
+              <div class="form-control">
+                <div class="inputs">
+                  <p>
+                    <label for="first_name">FIRST NAME</label>
+                    <input
+                      type="text"
+                      id="first_name"
+                      name="firstName"
+                      minlength="1"
+                      maxlength="15"
+                      required
+                    />
+                  </p>
+                  <p>
+                    <label for="last_name">LAST NAME</label>
+                    <input
+                      type="text"
+                      id="last_name"
+                      name="lastName"
+                      minlength="1"
+                      maxlength="20"
+                      required
+                    />
+                  </p>
+                </div>
+                <div class="inputs">
+                  <p>
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" required />
+                  </p>
+                  <p>
+                    <label for="tel">PHONE NUMBER</label>
+                    <input
+                      type="tel"
+                      id="tel"
+                      name="tel"
+                      pattern="\d{9}"
+                      title="Please enter 9 digit number"
+                      required
+                    />
+                  </p>
+                </div>
+                <div class="inputs">
+                  <p>
+                    <label for="psw">PASSWORD</label>
+                    <input
+                      class="error"
+                      type="password"
+                      id="psw"
+                      name="password"
+                      required
+                    />
+                  </p>
+                  <p>
+                    <label for="cPsw">CONFIRM PASSWORD</label>
+                    <input
+                      type="password"
+                      id="cPsw"
+                      name="confirmPassword"
+                      required
+                    />
+                  </p>
+                </div>
+              </div>
+            </fieldset>
+            <button type="submit">Create Account</button>
+          </form>
+        </div>
+        <p class="login">Already have an account? <a href="">Log in</a></p>
       </div>
     </div>
   </body>
