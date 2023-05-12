@@ -54,11 +54,49 @@ div[class="bg-heading"] {
   background-color: whitesmoke;
 }
 .head1 {
-  margin: 82px 71px 54px 59px;
+  padding: 86px 219px 54px 59px;
   width: 80%;
-  width: 49%;
+  width: 62%;
 }
 .action {
   margin-top: 6%;
   margin-bottom: -23px;
+}
+form {
+  background-color: white;
+  padding: 20px 10px 30px 20px;
+}
+fieldset {
+  border: none;
+}
+legend {
+  font-size: 25px;
+  font-weight: 500;
+}
+label {
+  display: block;
+}
+fieldset > p {
+  display: inline-block;
+  padding: 10px 20px 10px 10px;
+}
+.form-control {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+form input {
+  width: 30vh;
+  height: 25px;
+  border: 2px solid black;
+  margin-top: 4px;
+}
+.inputs {
+  display: flex;
+  justify-content: space-around;
+}
+p {
+  margin: 5px;
 }
